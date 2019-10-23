@@ -1,0 +1,14 @@
+:host {
+  flex: 1;
+  color: var(--dark);
+  display: grid;
+  grid-template-areas: 'main';
+  grid-template-rows: 1fr;
+}
+
+.main {
+  grid-area: main;
+  background-image: url(../../../assets/img/repuestos.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
