@@ -1,0 +1,14 @@
+:host {
+  flex: 1;
+  color: var(--dark);
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  background-image: url(../../../assets/img/home.png);
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  background-position: center;
+  background-repeat: no-repeat;
+}
