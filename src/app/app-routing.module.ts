@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PerfNeumComponent, PerfHidrComponent, RepuestosComponent } from './components';
+import { PerfNeumComponent, PerfHidrComponent, RepuestosComponent, EmpujMallaComponent } from './components';
+import { VigaComponent } from './components/viga/viga.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,14 @@ const routes: Routes = [
   {
     path: 'repuestos',
     component: RepuestosComponent
+  },
+  {
+    path: 'empujmalla',
+    component: EmpujMallaComponent
+  },
+  {
+    path: 'viga',
+    component: VigaComponent
   },
   {
     path: '**',

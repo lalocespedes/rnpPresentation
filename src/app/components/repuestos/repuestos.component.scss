@@ -1,14 +1,21 @@
 :host {
   flex: 1;
+  display: flex;
+  align-items: center;
   color: var(--dark);
-  display: grid;
-  grid-template-areas: 'main';
-  grid-template-rows: 1fr;
-}
-
-.main {
-  grid-area: main;
   background-image: url(../../../assets/img/repuestos.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  box-sizing: border-box;
+
+}
+
+.card {
+  opacity: 0.9;
+}
+
+
+.list-group-item {
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
