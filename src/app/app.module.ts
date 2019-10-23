@@ -7,6 +7,9 @@ import { PerfNeumComponent, PerfHidrComponent } from './components';
 import { RepuestosComponent } from './components/repuestos/repuestos.component';
 import { EmpujMallaComponent } from './components/empuj-malla/empuj-malla.component';
 import { VigaComponent } from './components/viga/viga.component';
+import { ModalImageComponent } from './components/modal-image/modal-image.component';
+
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -15,13 +18,16 @@ import { VigaComponent } from './components/viga/viga.component';
     PerfHidrComponent,
     RepuestosComponent,
     EmpujMallaComponent,
-    VigaComponent
+    VigaComponent,
+    ModalImageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModalModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ ModalImageComponent ]
 })
 export class AppModule { }
