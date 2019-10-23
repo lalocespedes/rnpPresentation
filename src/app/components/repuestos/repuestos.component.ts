@@ -15,7 +15,6 @@ export class RepuestosComponent implements OnInit {
   ngOnInit() {
   }
 
-
   openModal(name: string) {
     this.bsModalRef = this.modalService.show(ModalImageComponent, {
       class: 'modal-full',
@@ -24,6 +23,5 @@ export class RepuestosComponent implements OnInit {
         imgname: `repuestos/${name}.png`
       }
     });
-
   }
 }
