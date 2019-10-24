@@ -14,9 +14,15 @@ export class PerfNeumComponent implements OnInit {
 
   ngOnInit() {}
 
-  openModal() {
-    this.bsModalRef = this.modalService.show(ModalImageComponent, {
-      class: 'modal-full'
-    });
+  openModal(name: string) {
+    if (name) {
+      this.bsModalRef = this.modalService.show(ModalImageComponent, {
+        class: 'modal-full',
+        animated: false,
+        initialState: {
+          imgname: `neumaticas/${name}.png`
+        }
+      });
+    }
   }
 }

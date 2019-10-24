@@ -3,23 +3,29 @@
 </main>
 <div id="menu" class="d-flex flex-column">
   <ul class="h-100 d-flex align-items-center">
-    <li [routerLink]="['/perfneum']" routerLinkActive="router-link-active" class="list-inline-item">
+    <li [routerLink]="['/home']" class="list-inline-item">
+      <i class="fa fa-home fa-4x text-primary" aria-hidden="true"></i>
+    </li>
+    <li [routerLink]="['/perfneum']" class="col list-inline-item">
       PERFORADORAS NEUMATICAS
     </li>
-    <li [routerLink]="['/perfhidr']" routerLinkActive="router-link-active" class="list-inline-item">
+    <li [routerLink]="['/perfhidr']" class="col list-inline-item">
       PERFORADORAS HIDRAULICAS
     </li>
-    <li [routerLink]="['/repuestos']" class="list-inline-item">
+    <li [routerLink]="['/repuestos']" class="col list-inline-item">
       REPUESTOS
     </li>
-    <li [routerLink]="['/empujmalla']" class="list-inline-item">
+    <li [routerLink]="['/empujmalla']" class="col list-inline-item">
       EMPUJADOR DE MALLA
     </li>
-    <li [routerLink]="['/viga']" class="list-inline-item">
+    <li [routerLink]="['/viga']" class="col list-inline-item">
       VIGA
     </li>
-    <li class="list-inline-item">
+    <li class="col list-inline-item">
       JUEGOS
+    </li>
+    <li (click)="openModal('quienessomos')" [routerLink]="['/home']" class="list-inline-item mr-3">
+      <i class="fa fa-info-circle fa-4x text-warning" aria-hidden="true"></i>
     </li>
   </ul>
 </div>

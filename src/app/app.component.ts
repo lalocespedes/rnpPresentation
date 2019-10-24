@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { ModalImageComponent } from './components/modal-image/modal-image.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'rnpPresentation';
+  bsModalRef: BsModalRef;
+
+  constructor(private modalService: BsModalService) {}
+
+  openModal(name: string) {
+    if (name) {
+      this.bsModalRef = this.modalService.show(ModalImageComponent, {
+        class: 'modal-full',
+        animated: false,
+        initialState: {
+          imgname: `${name}.png`
+        }
+      });
+    }
+  }
 }

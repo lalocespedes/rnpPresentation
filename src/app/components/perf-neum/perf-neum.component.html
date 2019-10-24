@@ -1,27 +1,32 @@
 <div class="main">
-  <div class="header">
-    <h1>PERFORADORAS</h1>
-    <h1>NEUMATICAS</h1>
+  <div class="header d-flex">
+    <div class="col">
+      <h1>PERFORADORAS</h1>
+      <h1>NEUMATICAS</h1>
+    </div>
+    <div>
+      <img class="float-right" src="assets/img/logo.png" alt="">
+    </div>
   </div>
   <div class="menu d-flex flex-column">
     <div class="col d-flex align-items-center justify-content-center">
       <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-S83FX</button>
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-RB83FX</button>
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-S83FS</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-RB83FX</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-S83FS</button>
     </div>
     <div class="col d-flex align-items-center justify-content-center">
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-250X</button>
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-250S</button>
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-S58S</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-250X</button>
+      <button (click)="openModal('RN250S')" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-250S</button>
+      <button (click)="openModal('RNS58FS')" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">RN-S58S</button>
     </div>
     <div class="col d-flex align-items-center justify-content-center">
-      <button type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">JACKLEGS</button>
-      <button type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">STOPPERS</button>
-      <button type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">SINKERS</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">JACKLEGS</button>
+      <button (click)="openModal('stopers')" type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">STOPPERS</button>
+      <button (click)="openModal('sinkers')" type="button" class="w-25 p-4 btn btn-primary btn-lg m-2">SINKERS</button>
     </div>
     <div class="col d-flex align-items-center justify-content-center">
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">FAM RN-83</button>
-      <button type="button" class="w-25 p-4 btn btn-light btn-lg m-2">FAM RN-250</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">FAM RN-83</button>
+      <button (click)="openModal()" type="button" class="w-25 p-4 btn btn-light btn-lg m-2">FAM RN-250</button>
     </div>
   </div>
 </div>
