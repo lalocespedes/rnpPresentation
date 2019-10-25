@@ -10,6 +10,7 @@ import { VigaComponent } from './components/viga/viga.component';
 import { ModalImageComponent } from './components/modal-image/modal-image.component';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppRoutingModule,
     ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent],
   entryComponents: [ ModalImageComponent ]
 })
